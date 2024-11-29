@@ -1,0 +1,54 @@
+.login-container {
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px; /* ทำให้ความกว้างของฟอร์มเหมาะสม */
+  text-align: center;
+}
+
+.login-container img{
+  width: 70vw;
+}
+
+/* จัดระเบียบช่องกรอกข้อมูลให้เรียงกันแนวนอน */
+.login-form {
+  display: flex;
+  flex-direction: column; /* แนวตั้ง */
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between; /* ช่องกรอกข้อมูลให้มีระยะห่าง */
+  width: 100%;
+  gap: 10px; /* เพิ่มช่องว่างระหว่างช่องกรอกข้อมูล */
+}
+
+.login-container input {
+  width: 48%; /* ช่องกรอกข้อมูลแต่ละช่องจะมีความกว้างประมาณครึ่งหนึ่งของฟอร์ม */
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9em;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
